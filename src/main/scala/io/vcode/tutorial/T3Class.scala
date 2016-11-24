@@ -2,7 +2,6 @@ package io.vcode.tutorial
 
 import jdk.internal.dynalink.linker.LinkerServices.Implementation
 
-
 object T3Class {
     def main(args: Array[String]) {
         val pt = new Point(10, 20);
@@ -14,7 +13,6 @@ object T3Class {
         entity.print();
     }
 }
-
 
 class Point(val xc: Int, val yc: Int) extends Entity {
     var x: Int = xc
@@ -30,6 +28,7 @@ class Point(val xc: Int, val yc: Int) extends Entity {
         println("Point y location : " + y);
     }
 }
+
 object Point extends Entity{
     def move(p1: Point, dx: Int, dy: Int) {
         p1.x += dx
@@ -41,6 +40,7 @@ object Point extends Entity{
     }
 
 }
+
 class Entity{
     def print(){
         println("Class name: " + this.getClass.getName);
