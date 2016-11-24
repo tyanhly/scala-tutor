@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings
+.cache-main
+bin
+target
+!project
+project/*
+!project/plugins.sbt
