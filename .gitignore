@@ -1,7 +1,10 @@
-target
-.settings
-.project
 .classpath
+.project
+.settings
+.cache-main
+bin
+target
+!project
 project/*
 !project/plugins.sbt
-bin
+

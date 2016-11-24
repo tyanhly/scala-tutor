@@ -1,9 +1,11 @@
-name := "Spark Word Count Example"
+lazy val root = (project in file(".")).
+  settings(
+    name := "hello",
+    version := "1.0",
+    scalaVersion := "2.11.8"
+  )
 
-version := "1.0"
-
-scalaVersion := "2.11.8"
-
-// https://mvnrepository.com/artifact/com.google.inject/guice-parent
-libraryDependencies += "com.google.inject" % "guice-parent" % "4.1.0"
+libraryDependencies ++= Seq(
+  "com.google.inject" % "guice-parent" % "4.1.0"
+)
 
